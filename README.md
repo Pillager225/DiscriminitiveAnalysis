@@ -8,3 +8,5 @@ It also reports which features were not useful in categorizing the data, which w
 The program can also shuffle the data points around so that each run of the program produces semi-unique output. I found this to be useful because without shuffling, the program predicts the test data with 0% error. Strange result, but very possible with a data set of only 150 points. Shuffling the input makes the error rate greater than 0%.
 
 The assignment, as well as my responses have been included in this repo. See Assignment.pdf, and AssignmentResponse.pdf.
+
+Warning: The covariance matrix is subject to being a signular matrix when the dataset's dimensionality is high, and won't compute because the matrix is not invertible.
