@@ -6,8 +6,12 @@ import math
 import optparse
 from Preprocessing import *
 
-def getData(url, col_names, shuffled = False):
-    data = pd.read_csv(url, header=-1, names=col_names)
+def getData(url, columnNames, shuffled = False):
+    data = None
+    if columnNames is None:
+        data = pd.read_csv(url, header=-1)
+    else:
+        data = pd.read_csv(url, header=-1, names=columnNames)
     retval = np.array(data)
     if shuffled:
         np.random.shuffle(retval)
@@ -203,6 +207,8 @@ def testDiagonallyWith(data, variables):
 # runs test on dataset
 def processData(url, shuffled, categoryColumn, columnNames, testPercentage):
     rawdata = getData(url, columnNames, shuffled)
+    if columnNames is None:
+        columnNames = range(len(rawdata[0]))
     trainData, testData = splitData(rawdata, categoryColumn, testPercentage)
 
     variables, trainQDAErrorRate, trainLDAErrorRate, linSepCats = trainOn(trainData)
@@ -228,20 +234,18 @@ def processData(url, shuffled, categoryColumn, columnNames, testPercentage):
 
 if __name__ == "__main__":
     parser = optparse.OptionParser(usage="./DiscriminitiveAnalysis.py -d dataset_url -c category_column_number -t test_split_percentage")
-    parser.add_option('-d', action='store', type='string', dest='dataset', help='The dataset to categoryize', default=None)
+    parser.add_option('-d', action='store', type='string', dest='dataset', help='The path to the dataset to categoryize', default=None)
     parser.add_option('-s', '--shuffle', action='store_true', help='Shuffle the dataset before splitting', dest='shuffle')
     parser.add_option('-c', '--categoryColumn', action='store', type='int', dest='categoryColumn', help="The column to use as categories", default=None)
     parser.add_option('-t', '--testPercentage', action='store', type='int', dest='testPercentage', help="The percent of the data to allocate for testing data", default=None)
+    parser.add_option('--iris', action='store_true', dest='iris', default=False)
     options, args = parser.parse_args()
     url = ""
     columnNames = []
     if options.dataset is not None and options.categoryColumn is not None and options.testPercentage is not None:
-        if(options.dataset == 'iris' or options.dataset == 'Iris' or options.dataset == 'IRIS'):
-            url = "http://www.cse.scu.edu/~yfang/coen129/iris.data"
+        if(options.iris):
             columnNames = ['sepal length', 'sepal width', 'petal length', 'petal width', 'class']
-        elif(options.dataset == 'drugs'):
-            url = "http://archive.ics.uci.edu/ml/machine-learning-databases/00373/drug_consumption.data"
-            columnNames = range(32)
-        processData(url, options.shuffle, options.categoryColumn, columnNames, options.testPercentage)
+        columnNames = None
+        processData(options.dataset, options.shuffle, options.categoryColumn, columnNames, options.testPercentage)
     else:
         parser.print_help()
