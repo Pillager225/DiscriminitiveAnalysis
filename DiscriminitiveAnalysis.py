@@ -3,7 +3,7 @@
 import pandas as pd # used to download the data and parse it
 import numpy as np
 import math
-import sys
+import optparse
 from Preprocessing import *
 
 def getData(url, col_names, shuffled = False):
@@ -153,6 +153,7 @@ def reportResults(qdaErrorRate, ldaErrorRate, linSepCats):
     else:
         print("No categories were linearly seperable")
 
+# returns variables generated in training, as well as training error rate and which categories are linearly seperable
 def trainOn(data):
     variables = getVariables(data)
     qdaErrorRate, qdaErrorDatas = getErrorInfoFromData(data, variables, 'QDA')
@@ -160,12 +161,14 @@ def trainOn(data):
     linSepCats = getLinearlySeperableCategories(ldaErrorDatas, data)
     return variables, qdaErrorRate, ldaErrorRate, linSepCats
 
+# tests data with the generated variables, returns error rates and which categories are linearly seperable
 def testWith(data, variables):
     qdaErrorRate, qdaErrorDatas = getErrorInfoFromData(data, variables, 'QDA')
     ldaErrorRate, ldaErrorDatas = getErrorInfoFromData(data, variables, 'LDA')
     linSepCats = getLinearlySeperableCategories(ldaErrorDatas, data)
     return qdaErrorRate, ldaErrorRate, linSepCats
 
+# returns a list of variables it deteremined to be not useful for classification
 def determineUnimportantVariables(rawdata, categoryColumn, testPercentage, trainErrorRates, testErrorRates):
     unimportant = []
     for i in range(len(rawdata[0])): # length of data point X, number of features for X
@@ -182,6 +185,7 @@ def determineUnimportantVariables(rawdata, categoryColumn, testPercentage, train
                     unimportant.append(i)
     return unimportant
 
+# train using a diagonal covariance (sigma) matrix
 def trainDiagonallyOn(data):
     variables = getVariables(data)
     qdaErrorRate, qdaErrorDatas = getErrorInfoFromData(data, variables, 'QDA-diag')
@@ -189,41 +193,55 @@ def trainDiagonallyOn(data):
     linSepCats = getLinearlySeperableCategories(ldaErrorDatas, data)
     return variables, qdaErrorRate, ldaErrorRate, linSepCats
 
+# test using a diagonal covariance (sigma) matrix
 def testDiagonallyWith(data, variables):
     qdaErrorRate, qdaErrorDatas = getErrorInfoFromData(data, variables, 'QDA-diag')
     ldaErrorRate, ldaErrorDatas = getErrorInfoFromData(data, variables, 'LDA-diag')
     linSepCats = getLinearlySeperableCategories(ldaErrorDatas, data)
     return qdaErrorRate, ldaErrorRate, linSepCats
 
-if __name__ == '__main__':
-    url = "http://www.cse.scu.edu/~yfang/coen129/iris.data"
-    col_names = ['sepal length', 'sepal width', 'petal length', 'petal width', 'class']
-    testPercentage = 20
-    categoryColumn = 4
-    shuffled = False
-    if len(sys.argv) > 1 and sys.argv[1] == 'True':
-        shuffled = True
-
-    rawdata = getData(url, col_names, shuffled)
+# runs test on dataset
+def processData(url, shuffled, categoryColumn, columnNames, testPercentage):
+    rawdata = getData(url, columnNames, shuffled)
     trainData, testData = splitData(rawdata, categoryColumn, testPercentage)
 
     variables, trainQDAErrorRate, trainLDAErrorRate, linSepCats = trainOn(trainData)
     print("Training:")
     reportResults(trainQDAErrorRate, trainLDAErrorRate, linSepCats)
 
-    testQDAErrorRate, testLDAErrorRate, linSepCats = testWith(testData, variables)
     print("\nTesting:")
+    testQDAErrorRate, testLDAErrorRate, linSepCats = testWith(testData, variables)
     reportResults(testQDAErrorRate, testLDAErrorRate, linSepCats)
 
-    unimportantVarIndexes = determineUnimportantVariables(rawdata, categoryColumn, testPercentage, (trainQDAErrorRate, trainLDAErrorRate), (testQDAErrorRate, testLDAErrorRate))
     print("\nUnimportant variables:")
+    unimportantVarIndexes = determineUnimportantVariables(rawdata, categoryColumn, testPercentage, (trainQDAErrorRate, trainLDAErrorRate), (testQDAErrorRate, testLDAErrorRate))
     for i in unimportantVarIndexes:
-        print("\t"+str(col_names[i]))
+        print("\t"+str(columnNames[i]))
 
-    variables, trainQDAErrorRate, trainLDAErrorRate, linSepCats = trainDiagonallyOn(trainData)
     print("\nTraining with diagonal covariance matrix:")
+    variables, trainQDAErrorRate, trainLDAErrorRate, linSepCats = trainDiagonallyOn(trainData)
     reportResults(trainQDAErrorRate, trainLDAErrorRate, linSepCats)
     
-    testQDAErrorRate, testLDAErrorRate, linSepCats = testDiagonallyWith(testData, variables)
     print("\nTesting with diagonal covariance matrix:")
+    testQDAErrorRate, testLDAErrorRate, linSepCats = testDiagonallyWith(testData, variables)
     reportResults(testQDAErrorRate, testLDAErrorRate, linSepCats)
+
+if __name__ == "__main__":
+    parser = optparse.OptionParser(usage="./DiscriminitiveAnalysis.py -d dataset_url -c category_column_number -t test_split_percentage")
+    parser.add_option('-d', action='store', type='string', dest='dataset', help='The dataset to categoryize', default=None)
+    parser.add_option('-s', '--shuffle', action='store_true', help='Shuffle the dataset before splitting', dest='shuffle')
+    parser.add_option('-c', '--categoryColumn', action='store', type='int', dest='categoryColumn', help="The column to use as categories", default=None)
+    parser.add_option('-t', '--testPercentage', action='store', type='int', dest='testPercentage', help="The percent of the data to allocate for testing data", default=None)
+    options, args = parser.parse_args()
+    url = ""
+    columnNames = []
+    if options.dataset is not None and options.categoryColumn is not None and options.testPercentage is not None:
+        if(options.dataset == 'iris' or options.dataset == 'Iris' or options.dataset == 'IRIS'):
+            url = "http://www.cse.scu.edu/~yfang/coen129/iris.data"
+            columnNames = ['sepal length', 'sepal width', 'petal length', 'petal width', 'class']
+        elif(options.dataset == 'drugs'):
+            url = "http://archive.ics.uci.edu/ml/machine-learning-databases/00373/drug_consumption.data"
+            columnNames = range(32)
+        processData(url, options.shuffle, options.categoryColumn, columnNames, options.testPercentage)
+    else:
+        parser.print_help()

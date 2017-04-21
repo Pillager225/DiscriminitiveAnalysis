@@ -1,0 +1,2908 @@
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+	Iris-virginica
+
+Unimportant variables:
+	sepal length
+	sepal width
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 0.8333333333333334%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 10.0%
+LDA error rate: 10.0%
+Linear seperable categories:
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+
+Unimportant variables:
+	sepal length
+
+Training with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-virginica
+	Iris-versicolor
+	Iris-setosa
+
+Unimportant variables:
+	sepal length
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+	Iris-virginica
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-virginica
+	Iris-versicolor
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 5.0%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-virginica
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+	Iris-virginica
+
+Unimportant variables:
+	sepal length
+
+Training with diagonal covariance matrix:
+QDA error rate: 5.0%
+LDA error rate: 5.0%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+	Iris-virginica
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 10.0%
+LDA error rate: 10.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+
+Unimportant variables:
+	sepal length
+
+Training with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-virginica
+	Iris-versicolor
+	Iris-setosa
+
+Unimportant variables:
+	sepal length
+
+Training with diagonal covariance matrix:
+QDA error rate: 5.0%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 0.8333333333333334%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+
+Unimportant variables:
+	sepal width
+
+Training with diagonal covariance matrix:
+QDA error rate: 5.0%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+	Iris-virginica
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+	Iris-virginica
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 0.0%
+LDA error rate: 0.8333333333333334%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+
+Testing:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+
+Unimportant variables:
+	sepal length
+	sepal width
+
+Training with diagonal covariance matrix:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 10.0%
+LDA error rate: 10.0%
+Linear seperable categories:
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+
+Unimportant variables:
+	sepal length
+
+Training with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-virginica
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+	Iris-versicolor
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 5.0%
+LDA error rate: 5.0%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+	Iris-versicolor
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+
+Unimportant variables:
+	sepal width
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 5.0%
+LDA error rate: 5.0%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-virginica
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+	Iris-versicolor
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 5.0%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-virginica
+	Iris-setosa
+
+Unimportant variables:
+	sepal length
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+	Iris-versicolor
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 5.0%
+LDA error rate: 5.0%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+	Iris-versicolor
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-virginica
+	Iris-versicolor
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+	Iris-versicolor
+
+Unimportant variables:
+	sepal length
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 5.833333333333333%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+	Iris-versicolor
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+	Iris-virginica
+
+Unimportant variables:
+	sepal length
+	sepal width
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+	Iris-virginica
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-virginica
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 0.8333333333333334%
+LDA error rate: 0.8333333333333334%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+
+Testing:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 5.0%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+	Iris-virginica
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 5.0%
+LDA error rate: 5.0%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+	Iris-virginica
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+
+Unimportant variables:
+	sepal length
+
+Training with diagonal covariance matrix:
+QDA error rate: 5.0%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+	Iris-virginica
+_________________________________________________________
+Training:
+QDA error rate: 0.8333333333333334%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+
+Unimportant variables:
+	sepal width
+
+Training with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+	Iris-virginica
+
+Unimportant variables:
+	sepal width
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+	Iris-virginica
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-virginica
+	Iris-versicolor
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+
+Unimportant variables:
+	sepal width
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+
+Unimportant variables:
+	sepal length
+
+Training with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+	Iris-virginica
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 5.0%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-virginica
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 5.0%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+	Iris-versicolor
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 10.0%
+LDA error rate: 10.0%
+Linear seperable categories:
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+	Iris-virginica
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 5.0%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+	Iris-virginica
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+
+Unimportant variables:
+	sepal width
+
+Training with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+_________________________________________________________
+Training:
+QDA error rate: 0.8333333333333334%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-virginica
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+	Iris-versicolor
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+	Iris-virginica
+
+Unimportant variables:
+	sepal length
+
+Training with diagonal covariance matrix:
+QDA error rate: 5.0%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 0.8333333333333334%
+LDA error rate: 0.8333333333333334%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-virginica
+	Iris-versicolor
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 5.0%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-virginica
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 10.0%
+LDA error rate: 10.0%
+Linear seperable categories:
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-virginica
+	Iris-versicolor
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 5.0%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-virginica
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+
+Unimportant variables:
+	sepal width
+
+Training with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-virginica
+	Iris-versicolor
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 0.8333333333333334%
+LDA error rate: 0.8333333333333334%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+
+Testing:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Unimportant variables:
+	sepal length
+
+Training with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-virginica
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 5.0%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+	Iris-virginica
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 0.8333333333333334%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+
+Unimportant variables:
+	sepal width
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+	Iris-versicolor
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-virginica
+	Iris-versicolor
+	Iris-setosa
+
+Unimportant variables:
+	sepal width
+
+Training with diagonal covariance matrix:
+QDA error rate: 5.0%
+LDA error rate: 5.0%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-virginica
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 10.0%
+LDA error rate: 10.0%
+Linear seperable categories:
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 0.0%
+LDA error rate: 0.8333333333333334%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+
+Testing:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+
+Unimportant variables:
+	sepal width
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-virginica
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 5.0%
+LDA error rate: 5.0%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-virginica
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+
+Unimportant variables:
+	sepal length
+
+Training with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+
+Unimportant variables:
+	sepal width
+
+Training with diagonal covariance matrix:
+QDA error rate: 5.0%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-virginica
+	Iris-versicolor
+	Iris-setosa
+
+Unimportant variables:
+	sepal width
+
+Training with diagonal covariance matrix:
+QDA error rate: 6.666666666666667%
+LDA error rate: 5.833333333333333%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-virginica
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-virginica
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+
+Unimportant variables:
+	sepal width
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+	Iris-virginica
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+	Iris-versicolor
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+	Iris-versicolor
+
+Unimportant variables:
+	sepal width
+
+Training with diagonal covariance matrix:
+QDA error rate: 5.833333333333333%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+	Iris-versicolor
+_________________________________________________________
+Training:
+QDA error rate: 0.8333333333333334%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+
+Unimportant variables:
+	sepal width
+
+Training with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+	Iris-virginica
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 0.8333333333333334%
+LDA error rate: 0.8333333333333334%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+
+Testing:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 2.5%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 0.8333333333333334%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+
+Testing:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+	Iris-virginica
+
+Unimportant variables:
+	sepal width
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+	Iris-virginica
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-virginica
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 5.0%
+LDA error rate: 5.0%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-virginica
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+
+Unimportant variables:
+	sepal width
+
+Training with diagonal covariance matrix:
+QDA error rate: 5.0%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+	Iris-virginica
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 5.0%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+	Iris-virginica
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-virginica
+	Iris-setosa
+
+Unimportant variables:
+	sepal length
+
+Training with diagonal covariance matrix:
+QDA error rate: 5.0%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-virginica
+	Iris-versicolor
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 10.0%
+LDA error rate: 10.0%
+Linear seperable categories:
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 0.8333333333333334%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+
+Unimportant variables:
+	sepal width
+
+Training with diagonal covariance matrix:
+QDA error rate: 5.0%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+	Iris-virginica
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 0.8333333333333334%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-virginica
+
+Unimportant variables:
+	sepal width
+
+Training with diagonal covariance matrix:
+QDA error rate: 5.0%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+	Iris-virginica
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+	Iris-virginica
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-virginica
+	Iris-versicolor
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 5.0%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+	Iris-virginica
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+	Iris-versicolor
+_________________________________________________________
+Training:
+QDA error rate: 2.5%
+LDA error rate: 2.5%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-virginica
+	Iris-setosa
+
+Unimportant variables:
+	sepal width
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 5.0%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-versicolor
+	Iris-virginica
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 1.6666666666666667%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 4.166666666666666%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 0.0%
+LDA error rate: 1.6666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Testing:
+QDA error rate: 3.3333333333333335%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 5.0%
+LDA error rate: 4.166666666666666%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 0.0%
+LDA error rate: 0.0%
+Linear seperable categories:
+	Iris-virginica
+	Iris-versicolor
+	Iris-setosa
+_________________________________________________________
+Training:
+QDA error rate: 0.8333333333333334%
+LDA error rate: 0.8333333333333334%
+Linear seperable categories:
+	Iris-virginica
+	Iris-setosa
+
+Testing:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-setosa
+
+Unimportant variables:
+
+Training with diagonal covariance matrix:
+QDA error rate: 2.5%
+LDA error rate: 3.3333333333333335%
+Linear seperable categories:
+	Iris-setosa
+
+Testing with diagonal covariance matrix:
+QDA error rate: 6.666666666666667%
+LDA error rate: 6.666666666666667%
+Linear seperable categories:
+	Iris-setosa
+_________________________________________________________
