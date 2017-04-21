@@ -232,6 +232,7 @@ def processData(url, shuffled, categoryColumn, columnNames, testPercentage):
     testQDAErrorRate, testLDAErrorRate, linSepCats = testDiagonallyWith(testData, variables)
     reportResults(testQDAErrorRate, testLDAErrorRate, linSepCats)
 
+
 if __name__ == "__main__":
     parser = optparse.OptionParser(usage="./DiscriminitiveAnalysis.py -d dataset_url -c category_column_number -t test_split_percentage")
     parser.add_option('-d', action='store', type='string', dest='dataset', help='The path to the dataset to categoryize', default=None)
@@ -241,11 +242,10 @@ if __name__ == "__main__":
     parser.add_option('--iris', action='store_true', dest='iris', default=False)
     options, args = parser.parse_args()
     url = ""
-    columnNames = []
+    columnNames = None
     if options.dataset is not None and options.categoryColumn is not None and options.testPercentage is not None:
         if(options.iris):
             columnNames = ['sepal length', 'sepal width', 'petal length', 'petal width', 'class']
-        columnNames = None
         processData(options.dataset, options.shuffle, options.categoryColumn, columnNames, options.testPercentage)
     else:
         parser.print_help()
