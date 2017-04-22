@@ -36,19 +36,20 @@ def getCovarianceMatrix(data, average):
     cov /= len(data)
     return cov
 
-def getVariables(data):
+def getVariables(data, totalDataPoints):
     averages = {}
     covariances = {}
+    pp = getPriorProbabilitiesForCategories(data, totalDataPoints)
     for cat in data.keys():
         averages[cat] = getAverageVector(data[cat])
         covariances[cat] = getCovarianceMatrix(data[cat], averages[cat])
-    return averages, covariances
+    return averages, covariances, pp
 
-def getVariablesDiagonal(data):
-    averages, covariances = getVariables(data)
+def getVariablesDiagonal(data, totalDataPoints):
+    averages, covariances, pp = getVariables(data, totalDataPoints)
     for cat in data.keys():
         covariances[cat] = np.diag(covariances[cat])
-    return averages, covariances
+    return averages, covariances, pp
 
 def getPriorProbabilitiesForCategories(data, totalDataPoints):
     pp = {}
@@ -62,7 +63,8 @@ def getPriorProbabilitiesForCategories(data, totalDataPoints):
 def invertDiagonalVector(cov):
     nCov = [0]*len(cov)
     for i in range(len(cov)):
-        nCov[i] = 1.0/cov[i]
+        if cov[i] != 0:
+            nCov[i] = 1.0/cov[i]
     return nCov
 
 def makeMatrixFromDiagonalVector(cov):
@@ -110,10 +112,10 @@ def discriminitiveAnalysis(cats, probCatGivenX):
     return findMaxValueIndex(DAinFavor)
 
 # error data is useful for debugging as it shows which entries were errors
-def getErrors(data, variables, totalDataPoints, diagonalCovariance):
+def getErrors(data, variables, diagonalCovariance):
     errors = 0
     errorDatas = []
-    priorProbabilities = getPriorProbabilitiesForCategories(data, totalDataPoints)
+    priorProbabilities = variables[2]
     cats = list(data.keys())
     for category in cats:
         for X in data[category]:
@@ -147,22 +149,21 @@ def makeDiagonalMat(mat):
 # data should be a dictionary whos keys are the categories
 # variables should be the tuple (averagesDict, covariancesDict) where each dict has keys for the categories
 # discAnalType should be either 'QDA' or 'LDA'
-def getErrorInfoFromData(data, variables, discAnalType):
+def getErrorInfoFromData(data, variables, totalDataPoints, discAnalType):
     errors = 0
     errorDatas = []
-    totalDataPoints = getTotalDataPoints(data)
     if 'diag' in discAnalType:
         if 'LDA' in discAnalType:
             aveCov = averageCovariances(variables[1], True)
             for cat in variables[1].keys():
                 variables[1][cat] = aveCov
-        errors, errorDatas = getErrors(data, variables, totalDataPoints, True)
+        errors, errorDatas = getErrors(data, variables, True)
     else:
         if 'LDA' in discAnalType:
             aveCov = averageCovariances(variables[1], False)
             for cat in variables[1].keys():
                 variables[1][cat] = aveCov
-        errors, errorDatas = getErrors(data, variables, totalDataPoints, False)
+        errors, errorDatas = getErrors(data, variables, False)
     errorRate = errors/totalDataPoints
     return errorRate, errorDatas
 
@@ -179,21 +180,31 @@ def getLinearlySeperableCategories(errorDatas, data):
     return linSepCats
 
 def reportResults(qdaErrorRate, ldaErrorRate):
-    print("QDA error rate: " +  str(qdaErrorRate*100) + "%")
+    if qdaErrorRate >= 0:
+        print("QDA error rate: " +  str(qdaErrorRate*100) + "%")
     print("LDA error rate: " +  str(ldaErrorRate*100) + "%")
 
 # returns variables generated in training, as well as training error rate and which categories are linearly seperable
 def trainOn(data):
-    variables = getVariables(data)
-    qdaErrorRate, qdaErrorDatas = getErrorInfoFromData(data, variables, 'QDA')
-    ldaErrorRate, ldaErrorDatas = getErrorInfoFromData(data, variables, 'LDA')
+    totalDataPoints = getTotalDataPoints(data)
+    variables = getVariables(data, totalDataPoints)
+
+    if len(data[list(data.keys())[0]]) < 6:
+        qdaErrorRate, qdaErrorDatas = getErrorInfoFromData(data, variables, totalDataPoints, 'QDA')
+    else:
+        qdaErrorRate = -1
+    ldaErrorRate, ldaErrorDatas = getErrorInfoFromData(data, variables, totalDataPoints, 'LDA')
     linSepCats = getLinearlySeperableCategories(ldaErrorDatas, data)
     return variables, qdaErrorRate, ldaErrorRate, linSepCats
 
 # tests data with the generated variables, returns error rates and which categories are linearly seperable
 def testWith(data, variables):
-    qdaErrorRate, qdaErrorDatas = getErrorInfoFromData(data, variables, 'QDA')
-    ldaErrorRate, ldaErrorDatas = getErrorInfoFromData(data, variables, 'LDA')
+    totalDataPoints = getTotalDataPoints(data)
+    if len(data[list(data.keys())[0]]) < 6:
+        qdaErrorRate, qdaErrorDatas = getErrorInfoFromData(data, variables, totalDataPoints, 'QDA')
+    else:
+        qdaErrorRate = -1
+    ldaErrorRate, ldaErrorDatas = getErrorInfoFromData(data, variables, totalDataPoints, 'LDA')
     linSepCats = getLinearlySeperableCategories(ldaErrorDatas, data)
     return qdaErrorRate, ldaErrorRate, linSepCats
 
@@ -216,16 +227,24 @@ def determineUnimportantVariables(rawdata, categoryColumn, testPercentage, train
 
 # train using a diagonal covariance (sigma) matrix
 def trainDiagonallyOn(data):
-    variables = getVariablesDiagonal(data)
-    qdaErrorRate, qdaErrorDatas = getErrorInfoFromData(data, variables, 'QDA-diag')
-    ldaErrorRate, ldaErrorDatas = getErrorInfoFromData(data, variables, 'LDA-diag')
+    totalDataPoints = getTotalDataPoints(data)
+    variables = getVariablesDiagonal(data, totalDataPoints)
+    if len(data[list(data.keys())[0]]) < 6:
+        qdaErrorRate, qdaErrorDatas = getErrorInfoFromData(data, variables, totalDataPoints, 'QDA-diag')
+    else:
+        qdaErrorRate = -1
+    ldaErrorRate, ldaErrorDatas = getErrorInfoFromData(data, variables, totalDataPoints, 'LDA-diag')
     linSepCats = getLinearlySeperableCategories(ldaErrorDatas, data)
     return variables, qdaErrorRate, ldaErrorRate, linSepCats
 
 # test using a diagonal covariance (sigma) matrix
 def testDiagonallyWith(data, variables):
-    qdaErrorRate, qdaErrorDatas = getErrorInfoFromData(data, variables, 'QDA-diag')
-    ldaErrorRate, ldaErrorDatas = getErrorInfoFromData(data, variables, 'LDA-diag')
+    totalDataPoints = getTotalDataPoints(data)
+    if len(data[list(data.keys())[0]]) < 6:
+        qdaErrorRate, qdaErrorDatas = getErrorInfoFromData(data, variables, totalDataPoints, 'QDA-diag')
+    else:
+        qdaErrorRate = -1
+    ldaErrorRate, ldaErrorDatas = getErrorInfoFromData(data, variables, totalDataPoints, 'LDA-diag')
     linSepCats = getLinearlySeperableCategories(ldaErrorDatas, data)
     return qdaErrorRate, ldaErrorRate, linSepCats
 
@@ -258,11 +277,11 @@ def QDAandLDA(trainData, testData, rawdata, categoryColumn, columnNames, testPer
     printUnimportantVariables(rawdata, categoryColumn, columnNames, testPercentage,(trainQDAErrorRate, trainLDAErrorRate), (testQDAErrorRate, testLDAErrorRate))
 
 def diagonalLDA(trainData, testData, rawdata, categoryColumn, columnNames, testPercentage):
-    print("\nTraining with diagonal LDA:")
+    print("\nTraining with diagonal covariance matrix:")
     variables, trainQDAErrorRate, trainLDAErrorRate, trainLinSepCats = trainDiagonallyOn(trainData)
     reportResults(trainQDAErrorRate, trainLDAErrorRate)
     
-    print("\nTesting with diagonal LDA:")
+    print("\nTesting with diagonal covariance matrix:")
     testQDAErrorRate, testLDAErrorRate, testLinSepCats = testDiagonallyWith(testData, variables)
     reportResults(testQDAErrorRate, testLDAErrorRate)
     linSepCats = list(set(trainLinSepCats) & set(testLinSepCats))
