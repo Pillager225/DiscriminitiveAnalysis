@@ -44,6 +44,12 @@ def getVariables(data):
         covariances[cat] = getCovarianceMatrix(data[cat], averages[cat])
     return averages, covariances
 
+def getVariablesDiagonal(data):
+    averages, covariances = getVariables(data)
+    for cat in data.keys():
+        covariances[cat] = np.diag(covariances[cat])
+    return averages, covariances
+
 def getPriorProbabilitiesForCategories(data, totalDataPoints):
     pp = {}
     totalDataPoints = 0.0
@@ -53,12 +59,28 @@ def getPriorProbabilitiesForCategories(data, totalDataPoints):
         pp[cat] = len(data[cat])/totalDataPoints
     return pp
 
+def invertDiagonalVector(cov):
+    nCov = [0]*len(cov)
+    for i in range(len(cov)):
+        nCov[i] = 1.0/cov[i]
+    return nCov
+
+def makeMatrixFromDiagonalVector(cov):
+    mat = np.zeros((len(cov), len(cov)), dtype=np.float32)
+    for i in range(len(cov)):
+        mat[i][i] = cov[i]
+    return mat
+
 # calculates probability of X being described by the gaussian distribution defined by variables, using the prior probability of the category
 # X should be a data point, variables is the tupel (averageVect, covarianceMat), pp is a number from 0 to 1
-def getProbabilityOfCategoryGivenX(X, variables, pp):
+def getProbabilityOfCategoryGivenX(X, variables, pp, diagonalCovariance):
     ave, cov = variables
     xMinAve = np.array(X-ave)[np.newaxis].T
-    return math.log(pp)+.5*(math.log(np.linalg.det(np.linalg.inv(cov)))-np.dot(xMinAve.T, np.dot(np.linalg.inv(cov), xMinAve)))
+    if diagonalCovariance:
+        cov = makeMatrixFromDiagonalVector(invertDiagonalVector(cov))
+        return math.log(pp)-.5*(np.dot(xMinAve.T, np.dot(cov, xMinAve)))
+    else:
+        return math.log(pp)+.5*(math.log(np.linalg.det(np.linalg.inv(cov)))-np.dot(xMinAve.T, np.dot(np.linalg.inv(cov), xMinAve)))
 
 def getTotalDataPoints(data):
     totalDataPoints = 0.0
@@ -88,7 +110,7 @@ def discriminitiveAnalysis(cats, probCatGivenX):
     return findMaxValueIndex(DAinFavor)
 
 # error data is useful for debugging as it shows which entries were errors
-def getErrors(data, variables, totalDataPoints):
+def getErrors(data, variables, totalDataPoints, diagonalCovariance):
     errors = 0
     errorDatas = []
     priorProbabilities = getPriorProbabilitiesForCategories(data, totalDataPoints)
@@ -97,7 +119,7 @@ def getErrors(data, variables, totalDataPoints):
         for X in data[category]:
             probCatGivenX = []
             for cat in cats:
-                probCatGivenX.append(getProbabilityOfCategoryGivenX(X, (variables[0][cat], variables[1][cat]), priorProbabilities[cat]))
+                probCatGivenX.append(getProbabilityOfCategoryGivenX(X, (variables[0][cat], variables[1][cat]), priorProbabilities[cat], diagonalCovariance))
             estimatedCategoryIndex = discriminitiveAnalysis(cats, probCatGivenX)
             if category != cats[estimatedCategoryIndex]:
                 # error in estimation
@@ -106,8 +128,11 @@ def getErrors(data, variables, totalDataPoints):
     return errors, errorDatas
 
 # returns a dictionary where every key maps to an average value of the covariance matricies
-def averageCovariances(covariances):
-    aveCov = np.zeros(covariances[list(covariances.keys())[0]].shape, dtype=np.float32)
+def averageCovariances(covariances, diagonal):
+    if diagonal:
+        aveCov = np.array([0]*len(covariances[list(covariances.keys())[0]]), dtype=np.float32)
+    else:
+        aveCov = np.zeros(covariances[list(covariances.keys())[0]].shape, dtype=np.float32)
     for cat in covariances.keys():
         aveCov += covariances[cat]
     return aveCov/len(covariances.keys())
@@ -123,15 +148,21 @@ def makeDiagonalMat(mat):
 # variables should be the tuple (averagesDict, covariancesDict) where each dict has keys for the categories
 # discAnalType should be either 'QDA' or 'LDA'
 def getErrorInfoFromData(data, variables, discAnalType):
+    errors = 0
+    errorDatas = []
     totalDataPoints = getTotalDataPoints(data)
-    if 'LDA' in discAnalType:
-        aveCov = averageCovariances(variables[1])
-        for cat in variables[1].keys():
-            variables[1][cat] = aveCov
     if 'diag' in discAnalType:
-        for cat in variables[1].keys():
-            makeDiagonalMat(variables[1][cat])
-    errors, errorDatas = getErrors(data, variables, totalDataPoints)
+        if 'LDA' in discAnalType:
+            aveCov = averageCovariances(variables[1], True)
+            for cat in variables[1].keys():
+                variables[1][cat] = aveCov
+        errors, errorDatas = getErrors(data, variables, totalDataPoints, True)
+    else:
+        if 'LDA' in discAnalType:
+            aveCov = averageCovariances(variables[1], False)
+            for cat in variables[1].keys():
+                variables[1][cat] = aveCov
+        errors, errorDatas = getErrors(data, variables, totalDataPoints, False)
     errorRate = errors/totalDataPoints
     return errorRate, errorDatas
 
@@ -147,15 +178,9 @@ def getLinearlySeperableCategories(errorDatas, data):
             linSepCats.append(cat)
     return linSepCats
 
-def reportResults(qdaErrorRate, ldaErrorRate, linSepCats):
+def reportResults(qdaErrorRate, ldaErrorRate):
     print("QDA error rate: " +  str(qdaErrorRate*100) + "%")
     print("LDA error rate: " +  str(ldaErrorRate*100) + "%")
-    if len(linSepCats) > 0:
-        print("Linear seperable categories:")
-        for cat in linSepCats:
-            print("\t"+str(cat));
-    else:
-        print("No categories were linearly seperable")
 
 # returns variables generated in training, as well as training error rate and which categories are linearly seperable
 def trainOn(data):
@@ -191,7 +216,7 @@ def determineUnimportantVariables(rawdata, categoryColumn, testPercentage, train
 
 # train using a diagonal covariance (sigma) matrix
 def trainDiagonallyOn(data):
-    variables = getVariables(data)
+    variables = getVariablesDiagonal(data)
     qdaErrorRate, qdaErrorDatas = getErrorInfoFromData(data, variables, 'QDA-diag')
     ldaErrorRate, ldaErrorDatas = getErrorInfoFromData(data, variables, 'LDA-diag')
     linSepCats = getLinearlySeperableCategories(ldaErrorDatas, data)
@@ -204,34 +229,55 @@ def testDiagonallyWith(data, variables):
     linSepCats = getLinearlySeperableCategories(ldaErrorDatas, data)
     return qdaErrorRate, ldaErrorRate, linSepCats
 
+def printLinearlySeperableCategories(linSepCats):
+    if len(linSepCats) > 0:
+        print("Linear seperable categories:")
+        for cat in linSepCats:
+            print("\t"+str(cat));
+    else:
+        print("No categories were linearly seperable")
+
+def printUnimportantVariables(rawdata, categoryColumn, columnNames, testPercentage, trainErrors, testErrors):
+    unimportantVarIndexes = determineUnimportantVariables(rawdata, categoryColumn, testPercentage, trainErrors, testErrors) 
+    if len(unimportantVarIndexes) > 0:
+        print("\nUnimportant variables:")
+        for i in unimportantVarIndexes:
+            print("\t"+str(columnNames[i]))
+    else:
+        print("\nThere were no unimportant variables.")
+
+def QDAandLDA(trainData, testData, rawdata, categoryColumn, columnNames, testPercentage):
+    variables, trainQDAErrorRate, trainLDAErrorRate, trainLinSepCats = trainOn(trainData)
+    print("Training:")
+    reportResults(trainQDAErrorRate, trainLDAErrorRate)
+    print("\nTesting:")
+    testQDAErrorRate, testLDAErrorRate, testLinSepCats = testWith(testData, variables)
+    reportResults(testQDAErrorRate, testLDAErrorRate)
+    linSepCats = list(set(trainLinSepCats) & set(testLinSepCats))
+    printLinearlySeperableCategories(linSepCats)
+    printUnimportantVariables(rawdata, categoryColumn, columnNames, testPercentage,(trainQDAErrorRate, trainLDAErrorRate), (testQDAErrorRate, testLDAErrorRate))
+
+def diagonalLDA(trainData, testData, rawdata, categoryColumn, columnNames, testPercentage):
+    print("\nTraining with diagonal LDA:")
+    variables, trainQDAErrorRate, trainLDAErrorRate, trainLinSepCats = trainDiagonallyOn(trainData)
+    reportResults(trainQDAErrorRate, trainLDAErrorRate)
+    
+    print("\nTesting with diagonal LDA:")
+    testQDAErrorRate, testLDAErrorRate, testLinSepCats = testDiagonallyWith(testData, variables)
+    reportResults(testQDAErrorRate, testLDAErrorRate)
+    linSepCats = list(set(trainLinSepCats) & set(testLinSepCats))
+    printLinearlySeperableCategories(linSepCats)
+    printUnimportantVariables(rawdata, categoryColumn, columnNames, testPercentage,(trainQDAErrorRate, trainLDAErrorRate), (testQDAErrorRate, testLDAErrorRate))
+
 # runs test on dataset
 def processData(url, shuffled, categoryColumn, columnNames, testPercentage):
     rawdata = getData(url, columnNames, shuffled)
     if columnNames is None:
         columnNames = range(len(rawdata[0]))
     trainData, testData = splitData(rawdata, categoryColumn, testPercentage)
-
-    variables, trainQDAErrorRate, trainLDAErrorRate, linSepCats = trainOn(trainData)
-    print("Training:")
-    reportResults(trainQDAErrorRate, trainLDAErrorRate, linSepCats)
-
-    print("\nTesting:")
-    testQDAErrorRate, testLDAErrorRate, linSepCats = testWith(testData, variables)
-    reportResults(testQDAErrorRate, testLDAErrorRate, linSepCats)
-
-    print("\nUnimportant variables:")
-    unimportantVarIndexes = determineUnimportantVariables(rawdata, categoryColumn, testPercentage, (trainQDAErrorRate, trainLDAErrorRate), (testQDAErrorRate, testLDAErrorRate))
-    for i in unimportantVarIndexes:
-        print("\t"+str(columnNames[i]))
-
-    print("\nTraining with diagonal covariance matrix:")
-    variables, trainQDAErrorRate, trainLDAErrorRate, linSepCats = trainDiagonallyOn(trainData)
-    reportResults(trainQDAErrorRate, trainLDAErrorRate, linSepCats)
-    
-    print("\nTesting with diagonal covariance matrix:")
-    testQDAErrorRate, testLDAErrorRate, linSepCats = testDiagonallyWith(testData, variables)
-    reportResults(testQDAErrorRate, testLDAErrorRate, linSepCats)
-
+    if len(rawdata[0]) < 6:
+        QDAandLDA(trainData, testData, rawdata, categoryColumn, columnNames, testPercentage)
+    diagonalLDA(trainData, testData, rawdata, categoryColumn, columnNames, testPercentage)
 
 if __name__ == "__main__":
     parser = optparse.OptionParser(usage="./DiscriminitiveAnalysis.py -d dataset_url -c category_column_number -t test_split_percentage")
